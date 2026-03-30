@@ -55,15 +55,12 @@ This project is built to be **100% cloud-reproducible**. You do not need to down
 If you do not have SWI-Prolog installed locally, you can easily run the expert system in your web browser:
 1. Go to **SWISH Prolog** (https://swish.swi-prolog.org/).
 2. Open the `prolog/health_advisor.pl` file from this repository, copy all the text, and paste it into the SWISH editor window.
-3. In the query box at the bottom right, ask the AI for a health report based on a predicted AQI number. For example, type:
-   ```prolog
-   ?- health_report(345).
-4. Press Enter or click Run. The system will logically deduce the category (very_poor) and advise wearing an N95 mask.
+3. In the query box at the bottom right, ask the AI for a health report based on a predicted AQI number. For example, type exactly this: `?- health_report(345).`
+4. Press `Enter` or click `Run`. The system will logically deduce the category (very_poor) and advise wearing an N95 mask.
 
 ---
 
 ## 📊 Results & Performance
-
 After training and testing the models on the historical dataset, the system achieved the following results:
 
 1. Data Completeness: Successfully recovered and interpolated thousands of missing sensor readings using time-series forward-filling (ffill), ensuring the Machine Learning models had continuous data to learn from.
