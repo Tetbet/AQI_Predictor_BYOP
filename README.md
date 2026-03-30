@@ -19,25 +19,15 @@ This project is a hybrid Artificial Intelligence system that combines **Machine 
 
 ---
 
-## 🧠 Course Concepts Applied (Syllabus Mapping)
-*   **CO2 & CO3 (Machine Learning Algorithms):** Implemented Random Forest Regressors and Classifiers; handled training/testing data splitting; evaluated models using Mean Squared Error (MSE) and Accuracy scores.
-*   **CO4 (Data Representation & Overfitting):** Addressed real-world messy data by cleaning NaNs. Tuned hyper-parameters (`n_estimators`, `random_state`) to prevent overfitting.
-*   **CO5 (Real-World Application):** Built a purposeful application that solves a genuine environmental and health problem.
-*   **CO6 (Prolog Programming):** Designed a rule-based expert system (`health_advisor.pl`) utilizing facts, rules, and compound goals to act as a virtual health advisor.
-
----
-
 ## 📂 Repository Structure
 
-AQI_Predictor_BYOP/
-│
-├── city_day.csv                           # The raw dataset (Hosted directly for cloud access)
-├── notebooks/
-│   ├── 01_AQI_EDA_and_Cleaning.ipynb      # Data cleaning, missing value handling, and Visualizations
-│   └── 02_AQI_ML_Models.ipynb             # Regression, Classification models, and Gradio Web UI
-├── prolog/
-│   └── health_advisor.pl                  # Prolog Expert System for health recommendations
-└── README.md                              # Project documentation
+* **`city_day.csv`** — The raw air quality dataset (hosted here so the code runs instantly).
+* **`notebooks/`** — Folder containing all the Machine Learning Python code:
+  * `01_AQI_EDA_and_Cleaning.ipynb` — Cleans missing data and generates visualizations.
+  * `02_AQI_ML_Models.ipynb` — Trains the Regression/Classification models and launches the Web UI.
+* **`prolog/`** — Folder containing the Symbolic AI code:
+  * `health_advisor.pl` — The Prolog Expert System for rule-based health recommendations.
+* **`README.md`** — This project documentation file.
 
 ---
 
